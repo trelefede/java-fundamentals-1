@@ -6,9 +6,9 @@ public class PasswordGenerator {
 			String nome = "Federico";
 			String cognome = "Treleani";
 			String colorePrefe = "Rosso";
-			byte giorno = 28;
-			byte mese = 9;
-			short anno = 1994;
+			int giorno = 28;
+			int mese = 9;
+			int anno = 1994;
 			int sommaData = giorno + mese + anno;
 			
 			String password = nome + "-" + cognome + "-" + colorePrefe + "-" + sommaData;
