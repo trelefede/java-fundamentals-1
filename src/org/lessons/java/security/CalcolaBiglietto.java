@@ -18,13 +18,13 @@ public class CalcolaBiglietto {
 		int età = input.nextInt();
 
 		double prezzoBiglietto = km * prezzoKm;
-		double prezzoBiglietto20 = (prezzoBiglietto * scontoYoung) / 100;
-		double prezzoBiglietto40 = (prezzoBiglietto * scontoSenior) / 100;
+		double sconto20 = (prezzoBiglietto * scontoYoung) / 100;
+		double sconto40 = (prezzoBiglietto * scontoSenior) / 100;
 
 		if (età < 18) {
-			System.out.println("Prezzo biglietto con sconto young " + prezzoBiglietto20 + "€");
+			System.out.println("Prezzo biglietto con sconto young " + (prezzoBiglietto - sconto20) + "€");
 		} else if (età > 65) {
-			System.out.println("Prezzo biglietto con sconto senior " + prezzoBiglietto40 + "€");
+			System.out.println("Prezzo biglietto con sconto senior " + (prezzoBiglietto - sconto40) + "€");
 		} else {
 			System.out.println("Per te nessuno sconto! Prezzo biglietto " + prezzoBiglietto + "€");
 		}
